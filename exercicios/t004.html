@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(218, 218, 154);
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>4ª)Receba gênero, idade e salário e defina se o gênero é masculino,
+        se é maior de idade e se recebe mais de um salário minímo (R$ 1000.00 )
+    </h1>
+    <script>
+        var genero = window.prompt('Digite seu gênero: ')
+        var idade = window.prompt('Digite sua idade: ')
+        var salario = window.prompt('Digite seu salário: ')
+        document.write(`${genero == 'masculino'?'É <strong>masculino</strong>':'Não é masculino'}<br/>`)
+        document.write(`${idade>=18?'É de maior':'É de menor'}<br/>`)
+        document.write(`${salario>=1000?'Recebe um salário minímo ou mais':'Recebe menos de um salário'}<br/>`)
+    </script>
+</body>
+</html>

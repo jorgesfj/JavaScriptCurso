@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(150, 110, 187);
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>3ª)Receba 3 salários e imprima eles -20% do imposto</h1>
+    <script>
+        var n1 = Number(window.prompt('Digite um salário (Só numeros separados por .)'))
+        var n2 = Number(window.prompt('Digite um salário (Só numeros separados por .)'))
+        var n3 = Number(window.prompt('Digite um salário (Só numeros separados por .)'))
+        document.write(`O salário ficou ${(n1 - (n1 * 20/100)).toLocaleString('pt-BR', {style:'currency',currency:'BRL'})} sendo o desconto de ${(n1 * 20/100).toLocaleString('pt-BR', {style:'currency',currency:'BRL'})}<br/>`)
+        document.write(`O salário ficou ${(n2 - (n2 * 20/100)).toLocaleString('pt-BR', {style:'currency',currency:'BRL'})} sendo o desconto de ${(n2 * 20/100).toLocaleString('pt-BR', {style:'currency',currency:'BRL'})}<br/>`)
+        document.write(`O salário ficou ${(n3 - (n3 * 20/100)).toLocaleString('pt-BR', {style:'currency',currency:'BRL'})} sendo o desconto de ${(n3 * 20/100).toLocaleString('pt-BR', {style:'currency',currency:'BRL'})}<br/>`)
+    </script>
+</body>
+</html>
