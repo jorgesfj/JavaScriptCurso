@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        input#vel01{
+            height: 15px;
+            width: 100px;
+        }
+        body{
+            background-color: rgb(129, 126, 126);
+            font: nromal 20pt Arial
+        }
+        div#div01{
+            font: normal 20pt Arial;
+            margin-top: 10px;
+        }
+        button{
+            background-color: red;
+        }
+        div#hora{
+            margin-top: 500px;
+            font: normal 10pt Arial;
+            margin-left: 1285px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CONSULTA DE MULTAS</h1>
+    Digite  a velocidade: <input type="number" name="vel01" id="vel01"> km/h
+    <input type="button" value="Consultar" onclick="salvar()">
+    <div id = "div01">Aguardando...</div>
+    <div id = "hora"></div>
+    <script>
+       function salvar(){
+        var velocidade = Number(window.document.getElementById('vel01').value)
+        if(velocidade>80){
+            window.document.getElementById('div01').innerHTML = 'Você foi <strong>MULTADO!</strong>'
+        }else{
+            window.document.getElementById('div01').innerHTML= 'Situação Regular!'
+        }
+
+       }
+
+       var momento = new Date()
+       var hora = window.document.getElementById('hora')
+       hora.innerHTML = `<strong> ${momento.getHours()}:${momento.getMinutes()}:${momento.getSeconds()} </strong>`
+    </script>
+</body>
+</html>
