@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(114, 114, 223);
+    font: normal 15pt Arial;
+
+}
+header{
+    color: white;
+    text-align: center;
+
+}
+section{
+    background: white;
+    border-radius: 10px;/*Borda arredondada*/
+    padding: 15px;/*Bordas com o filho*/
+    width: 500px;
+    margin: auto;/*Deixar no meio*/
+    box-shadow: 3px 3px 10px rgba(0, 0, 0,0.363);/*Para colocar sombra*/
+
+}
+
+footer{
+    color: white;
+    text-align: center;
+
+}
