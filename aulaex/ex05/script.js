@@ -12,6 +12,7 @@ function adicionar(){
         sel.appendChild(item)
     }
     window.document.getElementById('number').value = ''
+    window.document.getElementById('res').innerHTML = ''
 }
 
 function finalizar(){
@@ -27,4 +28,5 @@ function finalizar(){
     `O menor valor é ${lista[0]} <br/>`+
     `A soma de todos os valores é ${sum} <br/>`+
     `A média dos valores da lista é ${sum/lista.length}`
+
 }
